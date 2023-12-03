@@ -5,4 +5,4 @@ def print_matrix_integer(matrix=[[]]):
             if j == 9:
                 print(matrix[i][j], end="")
             else:
-                print("{}".format(matrix[i][j]), end=", ")
+                print("{:d}".format(matrix[i][j]), end=", ")
