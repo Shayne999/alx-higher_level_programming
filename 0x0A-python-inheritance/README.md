@@ -1,0 +1,1 @@
+This directory contains files with the .py extension, the contents of which are solutions to the Alx 0x0A. Python - Inheritance task. It also has a foder 'tests' that contains the test cases for the code.
