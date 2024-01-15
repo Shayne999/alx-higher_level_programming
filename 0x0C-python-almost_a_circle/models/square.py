@@ -7,13 +7,13 @@ class Square(Rectangle):
     """Represent a square."""
 
     def __init__(self, size, x=0, y=0, id=None):
-        """Initialize a new Square.
+        """Initialize a Square.
 
         Args:
-            size (int): The size of the new Square.
-            x (int): The x coordinate of the new Square.
-            y (int): The y coordinate of the new Square.
-            id (int): The identity of the new Square.
+            size (int): Size of the Square.
+            x (int): X coordinate of the Square.
+            y (int): Y coordinate of the Square.
+            id (int): Identity of the Square.
         """
         super().__init__(size, size, x, y, id)
 

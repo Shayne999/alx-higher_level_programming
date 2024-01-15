@@ -7,14 +7,14 @@ class Rectangle(Base):
     """Represent a rectangle."""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Initialize a new Rectangle.
+        """Initialize a  Rectangle.
 
         Args:
-            width (int): The width of the new Rectangle.
-            height (int): The height of the new Rectangle.
-            x (int): The x coordinate of the new Rectangle.
-            y (int): The y coordinate of the new Rectangle.
-            id (int): The identity of the new Rectangle.
+            width (int): Rectangle width.
+            height (int): Rectangle height.
+            x (int): Rectangle x coordinate.
+            y (int): Rectangle y coordinate.
+            id (int): The identity of the Rectangle.
         Raises:
             TypeError: If either of width or height is not an int.
             ValueError: If either of width or height <= 0.
@@ -29,7 +29,7 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """Set/get the width of the Rectangle."""
+        """Set/get rectangle width."""
         return self.__width
 
     @width.setter
