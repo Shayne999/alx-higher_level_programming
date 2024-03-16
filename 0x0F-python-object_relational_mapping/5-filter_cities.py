@@ -11,12 +11,8 @@ if __name__ == "__main__":
 
     cur = db.cursor()
 
-    state_id = sys.argv[4]
-
-    cur.execute("""SELECT cities.name
-                   FROM cities
-                   JOIN states ON cities.state_id = states.id
-                   WHERE states.id = %s""", (state_id,))
+    cur.execute("""SELECT cities.id, cities.name, states.name FROM
+                cities INNER JOIN states ON states.id=cities.state_id""")
 
     rows = cur.fetchall()
     for row in rows:
